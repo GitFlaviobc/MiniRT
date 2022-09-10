@@ -1,0 +1,69 @@
+# Camera Rotation Test Scene
+A 1 255,255,255
+L 0,0,0 0.1 255,255,255
+
+#Change the camera to: 0,0,0 0,0,-1 130
+#Default the camera: 0,0,15 0,0,-1 45
+C 0,0,15 0,0,-1 45
+
+#Plane Back - Need to uncomment after change the camera
+# pl 0,0,3 0,0,1 1,1,1
+
+#Plane Up
+pl 0,3,0 0,-1,0 20,20,100
+
+#Plane Left
+pl -3,0,0 1,0,0 48,25,45
+
+#Plane Back
+pl 0,0,-3 0,0,1 232,173,72
+
+#Plane Right
+pl 3,0,0 -1,0,0 92,21,71
+
+#Plane Bottom
+pl 0,-3,0 0,1,0 100,20,20
+
+#Top - Back Spheres
+sp -2,2,-2 0.3 255,20,15
+sp 0,2,-2 0.3 255,15,10
+sp 2,2,-2 0.3 255,10,05
+
+#Top - Mid Spheres
+sp -2,2,0 0.3 143,16,16
+sp 0,2,0 0.3 235,52,52
+sp 2,2,0 0.3 235,73,52
+
+#Top - Front Spheres
+sp -2,2,2 0.3 160,52,16
+sp 0,2,2 0.3 143,86,16
+sp 2,2,2 0.3 143,137,16
+
+#Mid - Back Spheres
+sp -2,0,-2 0.3 41,84,0
+sp 0.1,0,-2 0.3 15,61,10
+sp 2,0,-2 0.3 20,117,33
+
+#Mid - Mid Spheres
+sp -2,0,0 0.3 20,117,51
+sp 2,0,0 0.3 30,138,88
+
+#Mid - Front Spheres
+sp -2,0,2 0.3 30,138,113
+sp -0.1,0,2 0.3 45,99,87
+sp 2,0,2 0.3 2,51,40
+
+#Bottom - Back Spheres
+sp -2,-2,-2 0.3 10,34,191
+sp 0,-2,-2 0.3 20,40,171
+sp 2,-2,-2 0.3 20,50,219
+
+#Bottom - Mid Spheres
+sp -2,-2,0 0.3 49,114,140
+sp 0,-2,0 0.3 49,114,140
+sp 2,-2,0 0.3 54,49,140
+
+#Bottom - Front Spheres
+sp -2,-2,2 0.3 78,49,140
+sp 0,-2,2 0.3 91,49,140
+sp 2,-2,2 0.3 132,49,140
