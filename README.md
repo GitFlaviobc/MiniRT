@@ -13,29 +13,22 @@
 </p>
 
 <a name="intro"/> <h2> Intro </h2> </a>
-- This is a project about sharing resources.
-- On this project I learned about threads, mutex, data racing and about semaphores.
-- The concept of the dinner is used to show how threads can share resources and how to have control of what each thread is doing.
-- The code does not use semaphores and the logic would have to change tu use it, once it uses process. But I learned how they work and how I would have to do.
+- This is a project about Ray Tracing.
+- On this project I learned about the basics of ray tracing, vectors, matrices, all the math behind the camera, shapes, materials, colors, shadow and light.
+- This is only a basic ray tracing, an intro to a complex and fun topic.
+- I set the scene in the .rt files, read, parse, do the math of a 3D space, and allocate the memory to all pixels on the screen, after that I use the minilibx (that uses X11) to create the window with the image.
 <p></p>
 <a href = "#content">📋</a>
 
 <a name="goal"/> <h2> 🎯 Goal </h2> </a>
-- The dinner happens on a round table.
-- Each thread will be a philosopher.
-- Each philosopher has a fork.
-- To eat, each philosopher needs its own fork and the fork of the next philosopher. And the last philosopher uses its own fork and the fork of the first philosopher.
-- Each philosopher needs to eat, sleep, think.
-- If a philosopher cannot eat before the time to eat ends, the philoshper dies and the dinner is over. The time to eat is reseted after every meal.
-- If all philosophers eat the times they need the dinner is over.
-- If there is no limit of how many times they need to eat, the dinner will not end if the philosophers are always able to eat before the time.
-- Mutexes will be used to lock resources, avoiding data racing and making sure each philosopher is doing the right action.
-- One extra thread is used to control the dinner from outside the table, checking every time if any philoshopher died or if they all ate the meals needed. If yes, it will set the dinner to finished.
-- Before doing the actions, the philosophers are checking if the dinner is finished or not.
-- All the philosphers actions are printed on the terminal with the current dinner timer in miliseconds and the philosopher number.
-- To make sure the philosophers are able to take the forks they need, the even numbers philosophers (1,3,5....) are delayed a little in the beginning, so the even numbers (2,4,6...) can take the forks they need and put back for the other philosophers, during the time they are thinking and sleeping.
+- Create a scene with Ambient Light, Camera, Point Light and objects
+- The objects are set by using their respective math formulas and the given parameters after parse the .rt file.
+- The objects are: Infinity plane, Sphere, Open Cylinder.
+- Once all objects are set, the camera will use the ray tracing logic to determine how to show all the objects in screen.
+- The ray tracing is able to check postion in the 3D space, material colors, shadow points and how the lights color will affect each object final rendering.
+- While doing all the math, each pixel information is being allocated in a continuous memmory.
+- Once it is done, all the info is transleted with minilibx (X11), to rende the window and the pixels inside of it.
 
-- With semaphores the idea will be different, where all the forks will be in the center of the table and whoever gets two can go eat. But the other rules of the dinner are the same.
 <p></p>
 <a href = "#content">📋</a>
 
@@ -43,6 +36,7 @@
 - Language: C
 - VS code
 - WSL ubuntu
+- VNC 
 - Norminette 42 (code norm used by école 42)
 <p></p>
 <a href = "#content">📋</a>
@@ -55,12 +49,12 @@
 <a href = "#content">📋</a>
 
 <a name="how"/> <h2> 📖 How to use </h2> </a>
-
+⚠️ This is a graphic project so you need a VNC or something to be able to visualize the scenes.
 - Clone the repository
 ```bash
-git clone https://github.com/GitFlaviobc/Push_Swap.git
+git clone https://github.com/GitFlaviobc/MiniRT.git
 ```
-- to create the philosophers (Inside Project folder)
+- to create the miniRT (Inside Project folder)
 ```bash
 make
 ```
@@ -76,33 +70,29 @@ make clean
 ```bash
 make fclean
 ```
- - to delete all files and recreate the push_swap
+ - to delete all files and recreate the miniRT
 ```bash
 make re
 ```
-- Args:  number_of_philosophers time_to_die time_to_eat time_to_sleep [number_of_times_each_philosopher_must_eat] 
+- Args: .rt File
+- Example:
 ```bash
-# The result and order of action will change depending on the machine used to test
-# No death No Infnite loop
-./philo 3 100 4 2 2
-# No Death with Inifite Loop
-./philo 3 100 4 2
-# One philo dies
-./philo 4 8 5 2 1
-# No Death
-.philo 4 8 4 2 1
+./miniRT scenes/final.rt
 ```
 <p></p>
 <a href = "#content">📋</a>
 
 <a name="test"/> <h2> 👨‍💻 Tests </h2> </a>
-- You can generate random numbers in here for manual tests: [Random](https://www.random.org/integer-sets/)
-- I used this tester to get faster results: [Tester](https://github.com/laisarena/push_swap_tester)
+- Check for invalid rt files
+```bash
+make errors
+```
+- Use valgrind to check for leaks.
 <p></p>
 <a href = "#content">📋</a>
 
 <a name="update"/> <h2> 🆙 Updates </h2> </a>
-- The code I sent to evaluation will be kept the same. Any update will be on the update folder.⚠️🚧
+⚠️🚧
 <p></p>
 <a href = "#content">📋</a>
 
