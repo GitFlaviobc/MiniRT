@@ -1,4 +1,4 @@
-# Philosophers Dinner
+# Mini Ray Tracing
 
 <h1 name ="content" align = "center">📋 Table of contents</h1>
 <p align = "center">
