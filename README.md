@@ -22,7 +22,7 @@
 
 <a name="goal"/> <h2> 🎯 Goal </h2> </a>
 - Create a scene with Ambient Light, Camera, Point Light and objects
-- The objects are set by using their respective math formulas and the given parameters after parse the .rt file.
+- All elements are set by using their respective math formulas and the given parameters after parse the .rt file.
 - The objects are: Infinity plane, Sphere, Open Cylinder.
 - Once all objects are set, the camera will use the ray tracing logic to determine how to show all the objects in screen.
 - The ray tracing is able to check postion in the 3D space, material colors, shadow points and how the lights color will affect each object final rendering.
