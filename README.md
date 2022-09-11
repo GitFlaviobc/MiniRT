@@ -118,7 +118,7 @@ make re
 <a href = "#content">📋</a>
 
 <a name="test"/> <h2> 👨‍💻 Tests </h2> </a>
-- Check for invalid rt files
+- Examples of Invalid rt files / User input
 ```bash
 make errors
 ```
