@@ -43,6 +43,36 @@
 
 <a name="function"/> <h2> 📚 Functionality </h2> </a>
 
+<ins>
+<p> <h3> Elements Attributes Table </h3> </p>
+<p> <h4> All given numbers are just examples. </h4> </p>
+<p> <h4> The attributes values must be inside the limits range, when it has one. </h4> </p>
+</ins>
+
+Element        | Identifier   | Intensity   | Intensity Limits     | Color         | Color Limits 
+---            | ---          | ---         |---                   |---            |--- 
+Ambient Light  | A            | 1           | [0,1]                | 255,255,255   | [0,255]
+
+Element      | Identifier   | Position    | Position Vector       | Intensity    | Intensity Limits    | Color        | Color Limits
+---          | ---          | ---         |---                    |---           |---                  |---           |---
+Point Light  | L            | 1,0,0       | (x,y,z)               | 1            | [0,1]               | 255,255,255  | [0,255]
+
+Element    | Identifier   | Position    | Position Vector       | Look at    | Look at Vector | Look at Vector Limits   | FOV | FOV Limits
+---        | ---          | ---         |---                    |---         |---             |---                      |---  |---
+Camera     | C            | 0,0,0       | (x,y,z)               | 0,0,-1     | (x,y,z)        | [-1,1]                  | 45  | [0,180]
+
+Element      | Identifier   | Position    | Position Vector       | Diameter    | Color        | Color Limits
+---          | ---          | ---         |---                    |---          |---           |---
+Sphere       | sp           | 0,0,0       | (x,y,z)               | 0.2         | 255,255,255  | [0,255]
+
+Element               | Identifier   | Position    | Position Vector       | Normal  | Normal Vector | Normal Vector Limits  | Color        | Color Limits
+---                   | ---          | ---         |---                    |---      |---            |---                    |---           |---
+Inifinity Plane       | pl           | 0,-1,0      | (x,y,z)               | 0,1,0   | (x,y,z)       | [-1,1]                | 255,255,255  | [0,255]
+
+Element        | Identifier   | Position    | Position Vector       | Normal  | Normal Vector | Normal Vector Limits  | Diameter | Height | Color        | Color Limits
+---            | ---          | ---         |---                    |---      |---            |---                    |---       |---     |---           |---
+Cylinder       | cy           | 0,-2,0      | (x,y,z)               | 0,1,0   | (x,y,z)       | [-1,1]                | 0.1      | 0.3    | 255,255,255  | [0,255]
+
 ![Philosophers Example]
 
 <p></p>
