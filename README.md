@@ -46,8 +46,14 @@
 <img src="https://developer.nvidia.com/sites/default/files/pictures/2018/RayTracing/ray-tracing-image-1.jpg" width="500">
 <img src="https://www.povray.org/documentation/images/reference/perspcam.png" width="500">
 
+<h3>⚠️ To Allow Multiplie Lights, comment or delete the lines of the file bellow ⚠️</h3>
+
+[Lines in the File](https://github.com/GitFlaviobc/MiniRT/blob/ceb673212a9fec8aff7861bf06b3951d03a303d9/Project/src/parser/ft_elements_to_scene.c#L83-L84)
+
+<p></p>
+
 <ins>
-<p> <h3> Elements Attributes Table </h3> </p>
+<p> <h2> Elements Attributes Table </h2> </p>
 <p> <h4> All given numbers are just examples. </h4> </p>
 <p> <h4> The attributes values must be inside the limits range, when it has one. </h4> </p>
 </ins>
