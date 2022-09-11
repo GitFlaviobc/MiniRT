@@ -43,6 +43,9 @@
 
 <a name="function"/> <h2> 📚 Functionality </h2> </a>
 
+<img src="https://developer.nvidia.com/sites/default/files/pictures/2018/RayTracing/ray-tracing-image-1.jpg" width="500">
+<img src="https://www.povray.org/documentation/images/reference/perspcam.png" width="500">
+
 <ins>
 <p> <h3> Elements Attributes Table </h3> </p>
 <p> <h4> All given numbers are just examples. </h4> </p>
@@ -73,13 +76,15 @@ Element        | Identifier   | Position    | Position Vector       | Normal  | 
 ---            | ---          | ---         |---                    |---      |---            |---                    |---       |---     |---           |---
 Cylinder       | cy           | 0,-2,0      | (x,y,z)               | 0,1,0   | (x,y,z)       | [-1,1]                | 0.1      | 0.3    | 255,255,255  | [0,255]
 
-![Philosophers Example]
 
+<p> <h3>⚠️ I lost image quality while making the gif ⚠️</h3> <p>
+
+<img src="https://github.com/GitFlaviobc/MiniRT/blob/47e0fe7744cb843954d2ab788981b7008a13cf1b/Images/MiniRT.gif" width="500">
 <p></p>
 <a href = "#content">📋</a>
 
 <a name="how"/> <h2> 📖 How to use </h2> </a>
-⚠️ This is a graphic project so you need a VNC or something to be able to visualize the scenes.
+⚠️ This is a graphic project so you need a VNC or something similar to be able to visualize the scenes. ⚠️
 - Clone the repository
 ```bash
 git clone https://github.com/GitFlaviobc/MiniRT.git
