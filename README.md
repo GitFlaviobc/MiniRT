@@ -82,9 +82,6 @@ Element        | Identifier   | Position    | Position Vector       | Normal  | 
 ---            | ---          | ---         |---                    |---      |---            |---                    |---       |---     |---           |---
 Cylinder       | cy           | 0,-2,0      | (x,y,z)               | 0,1,0   | (x,y,z)       | [-1,1]                | 0.1      | 0.3    | 255,255,255  | [0,255]
 
-
-<p> <h3>⚠️ I lost image quality while making the gif ⚠️</h3> <p>
-
 <img src="https://github.com/GitFlaviobc/MiniRT/blob/47e0fe7744cb843954d2ab788981b7008a13cf1b/Images/MiniRT.gif" width="500">
 <p></p>
 <a href = "#content">📋</a>
