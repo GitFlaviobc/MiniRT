@@ -46,7 +46,7 @@
 <img src="https://developer.nvidia.com/sites/default/files/pictures/2018/RayTracing/ray-tracing-image-1.jpg" width="500">
 <img src="https://www.povray.org/documentation/images/reference/perspcam.png" width="500">
 
-<h3>⚠️ To Allow Multiplie Lights, comment or delete the lines of the file bellow ⚠️</h3>
+<h3>⚠️ To Allow Multiple Lights, comment or delete the lines of the file bellow ⚠️</h3>
 
 [Lines in the File](https://github.com/GitFlaviobc/MiniRT/blob/ceb673212a9fec8aff7861bf06b3951d03a303d9/Project/src/parser/ft_elements_to_scene.c#L83-L84)
 
@@ -82,8 +82,8 @@ Element        | Identifier   | Position    | Position Vector       | Normal  | 
 ---            | ---          | ---         |---                    |---      |---            |---                    |---       |---     |---           |---
 Cylinder       | cy           | 0,-2,0      | (x,y,z)               | 0,1,0   | (x,y,z)       | [-1,1]                | 0.1      | 0.3    | 255,255,255  | [0,255]
 
-<img src="https://github.com/GitFlaviobc/MiniRT/blob/47e0fe7744cb843954d2ab788981b7008a13cf1b/Images/MiniRT.gif" width="500">
-<p></p>
+
+<p><img src="https://github.com/GitFlaviobc/MiniRT/blob/47e0fe7744cb843954d2ab788981b7008a13cf1b/Images/MiniRT.gif" width="500"></p>
 <a href = "#content">📋</a>
 
 <a name="how"/> <h2> 📖 How to use </h2> </a>
